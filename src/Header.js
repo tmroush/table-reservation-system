@@ -1,9 +1,9 @@
-import "./Nav"
+import Nav from "./Nav"
 
 function Header() {
     return ( 
       <header>
-        <img src="./assets/Logo.svg" className="logo" alt="Little Lemon Logo" />
+        <img src="logo.png" className="logo" width="200" alt="Little Lemon Logo" />
         <Nav />
       </header>
     );

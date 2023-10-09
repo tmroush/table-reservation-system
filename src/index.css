@@ -1,13 +1,229 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+	padding: 0;
+	margin: 00;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Karla, sans-serif;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  color: #495E57;
+}
+
+header {
+  display: flex;
+  border-bottom: 1rem solid #495E57;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+nav {
+  font-family: Karla, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #495E57;
+  margin-top: 0.2rem;
+}
+
+.nav-bar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: stretch;
+  gap: 2rem;
+  margin-top: 0.15rem;
+}
+
+a {
+  text-decoration: none;
+  color: #495E57;
+}
+
+li {
+  list-style: none;
+}
+
+.hero {
+  display: grid;
+  column-gap: 3rem;
+  height:  20rem;
+  grid-template-columns: 1fr 1fr;
+  background-color: #495E57;
+}
+
+.information {
+  grid-column: 1;
+  margin-left: 6rem;
+}
+
+h1, h2 {
+  line-height: 1;
+  font-family: "Markazi Text";
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #F4CE17;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #F4CE17;
+}
+
+.description {
+  grid-column: 1;
+  color: white;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.heroImage {
+  grid-column: 2;
+  height: 24rem;
+  margin-bottom: -4rem;
+  border-radius: 1rem;
+  justify-self: center;
+  object-fit: cover;
+}
+
+.special {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.special h1 {
+  grid-column: 1/ 3;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  color: black;
+}
+.specialCard {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(185, 183, 183);
+  width: 20rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  justify-content: space-between;
+}
+
+.specialImage {
+  width: 20rem;
+  height: 15rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.specialCard h3 {
+  margin-left: 0.5rem;
+}
+
+.specialCard p {
+  margin-left: 0.5rem;
+}
+
+.specialCard h4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 3rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  justify-items: stretch;
+  align-items: center;
+}
+
+.testimonials {
+  background-color: #495E57;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  
+}
+
+.testimonial-title {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.testimonialItems {
+  display: grid;
+  column-gap: 3rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 14rem;
+  justify-content: center;
+  align-items: start;
+  justify-items: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.rating {
+  color: white;
+}
+
+.customerName {
+  color: white;
+}
+
+.testDescription {
+  color: white;
+  font-size: 8pt;
+  max-width: 20ch;
+}
+
+.testimonialImage {
+  width: 5rem;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.aboutUs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.aboutUsText {
+  color: black;
+  font-size: 10pt;
+  margin-top: 1rem;
+}
+
+.aboutImage {
+    width: 90%;
+    border-radius: 1rem;
+}
+
+footer {
+  background-color: #495E57;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 3rem;
+  color: white;
+}
+
+.footerLogo {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  width: 80%
+}
+
+.footerNav {
+  margin-top: 6rem;
+}
+
+.contactUs  {
+  margin-top: 6rem;
+}
+
+.socialMedia {
+  margin-top: 6rem;
 }

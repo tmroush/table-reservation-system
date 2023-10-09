@@ -2,7 +2,7 @@
 function Nav() {
     return (
     <nav>
-        <ul>
+        <ul className='nav-bar'>
             <li><a href="./Home.html">Home</a></li>
             <li><a href="./About.html">About</a></li>
             <li><a href="./Menu.html">Menu</a></li>
