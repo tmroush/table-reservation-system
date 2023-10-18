@@ -200,6 +200,12 @@ h2 {
     border-radius: 1rem;
 }
 
+form {
+    display: grid;
+    max-width: 200px;
+    gap: 20px;
+}
+
 footer {
   background-color: #495E57;
   display: grid;

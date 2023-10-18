@@ -6,6 +6,8 @@ import Footer from './Footer';
 import Reservations from './Reservations'
 import AboutUs from './AboutUs'
 import NotAvailable from './NotAvailable'
+import ConfirmBooking from './ConfirmBooking';
+
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
         <Route path='/Reservations' element={<Reservations />} />
         <Route path='/Order' element={<NotAvailable />} />
         <Route path='/Login' element={<NotAvailable />} />
+        <Route path='/ConfirmBooking' element={<ConfirmBooking />} />
     </Routes>
     <Footer />
     </div>
