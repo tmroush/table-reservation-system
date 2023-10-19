@@ -53,6 +53,18 @@ li {
   background-color: #495E57;
 }
 
+.reservationButton {
+  display: inline-block;
+  margin-top: 3rem;
+  background-color: #F4CE17;
+  color: #495E57;
+  border-radius: 0.3rem;
+  border-color: black;
+  max-width: 14rem;
+  text-align: center;
+  max-height: 3rem;
+}
+
 .information {
   grid-column: 1;
   margin-left: 6rem;
@@ -103,6 +115,19 @@ h2 {
   margin-bottom: 2rem;
   color: black;
 }
+
+.orderButton {
+  display: inline-block;
+  margin-Top: 6rem;
+  background-color: #F4CE17;
+  color: #495E57;
+  border-radius: .3rem;
+  max-width: 7rem;
+  text-align: center;
+  max-height: 1.5rem;
+  border-color: black;
+}
+
 .specialCard {
   display: flex;
   flex-direction: column;
@@ -200,12 +225,32 @@ h2 {
     border-radius: 1rem;
 }
 
+.reservations {
+  margin-left: 6rem;
+}
+
 form {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3rem;
+    margin-left: 2rem;
     max-width: 200px;
     gap: 20px;
 }
 
+.confimationPage {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+
+.notAvailable {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
 footer {
   background-color: #495E57;
   display: grid;
@@ -219,17 +264,17 @@ footer {
   margin-top: 2rem;
   margin-left: 2rem;
   margin-bottom: 2rem;
-  width: 80%
+  width: 25%;
 }
 
 .footerNav {
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
 
 .contactUs  {
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
 
 .socialMedia {
-  margin-top: 6rem;
+  margin-top: 3rem;
 }

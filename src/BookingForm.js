@@ -1,4 +1,3 @@
-import {useReducer} from 'react';
 import {useState} from 'react';
 
 const BookingForm = ({availableTimes, dispatcher, submitAction}) => {
@@ -32,6 +31,7 @@ const BookingForm = ({availableTimes, dispatcher, submitAction}) => {
                        id="res-date" 
                        name="res-date"
                        value={date}
+                       min={todaysDate}
                        onChange={e => dateChanged(e)}
                        />
                 <label htmlFor="res-time">Choose time</label>
@@ -48,7 +48,7 @@ const BookingForm = ({availableTimes, dispatcher, submitAction}) => {
                 <select id="occasion" value={occasion} required={true} onChange={e => setOccasion(e.target.value)}>
                     {occasions.map((o) => <option id="occasion-option" key={o}>{o}</option>)}
                 </select>
-                <input type="submit" value="Make Your reservation" />
+                <input type="submit" aria-label="Place reservation" value="Make your reservation" />
             </form>
         </div>
     );

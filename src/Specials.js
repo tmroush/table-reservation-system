@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import SpecialCard from "./SpecialCard";
 
 const specials = [
@@ -24,8 +25,8 @@ const specials = [
 function Specials() {
     return (
     <section className="special">
-      <h1 className="special-title">This week's specials!</h1>
-      <p> Button Holder</p>
+        <h1 className="special-title">This week's specials!</h1>
+        <Link className="orderButton" to="./order" >Order online</Link>
     {specials.map((special, index) => <SpecialCard key={index} special={special} />)}
     </section>
     );
